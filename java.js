@@ -1,13 +1,12 @@
 //JavaScript
 
+const choices = document.querySelectorAll('.choice');
 
+function getPlayerChoice(e){
+    console.log(this.classList.value);
+}
 
-
-
-
-    console.log('You picked ' + playerSelection);
-    console.log('Computer picked ' + computerSelection);
-    console.log(playRound(playerSelection, computerSelection))
+choices.forEach(choice => choice.addEventListener('click', getPlayerChoice));
 
 
 function getComputerChoice(){
@@ -16,11 +15,10 @@ function getComputerChoice(){
     return random, choice[random];
 }
 
-function getPlayerChoice(){
-    const playerInput = prompt('Rock, Paper or Scissors?');
-    let playerSelection = playerInput.toLowerCase('');
-    return playerSelection;
-}
+
+
+
+
 
 function playRound(playerSelection, computerSelection){
         //PlayerSelection Rock
