@@ -4,14 +4,11 @@
 
 
 
-for(let i = 1; i <= 5; i++) {
-    let playerSelection = getPlayerChoice();
-    let computerSelection = getComputerChoice();
-    console.log('Round Number: ' + i);
+
     console.log('You picked ' + playerSelection);
     console.log('Computer picked ' + computerSelection);
     console.log(playRound(playerSelection, computerSelection))
-}
+
 
 function getComputerChoice(){
     const choice =['rock', 'paper', 'scissors']

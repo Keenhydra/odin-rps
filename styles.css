@@ -1,1 +1,30 @@
 /* style page */
+
+body {
+    background-image: linear-gradient(to bottom right, #b109d6, #01066d);
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    height: 200px;
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    flex-direction: colum;
+}
+
+.container-images {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    border: solid red 1px;
+    padding: 5px;
+}
