@@ -1,12 +1,49 @@
 //JavaScript
 
-const choices = document.querySelectorAll('.choice');
+//const choices = document.querySelectorAll('.choice');
 
-function getPlayerChoice(e){
-    console.log(this.classList.value);
+const rocks = document.getElementById("rock");
+rocks.addEventListener("click", myRock);
+
+const papers = document.getElementById("paper");
+papers.addEventListener("click", myPaper);
+
+const scissors = document.getElementById("scissors");
+scissors.addEventListener("click", myScissor);
+//scissors.addEventListener('click', playSound)
+
+function myScissor() {
+  choice = 'scissors';
+  console.log(choice);
+  return choice;
 }
 
-choices.forEach(choice => choice.addEventListener('click', getPlayerChoice));
+function myPaper() {
+    choice = 'paper';
+    console.log(choice)
+    return choice;
+}
+
+function myRock() {
+    choice = 'rock';
+    console.log(choice)
+    return choice;
+}
+
+function playSound(){
+    console.log('boom');
+}
+
+
+//function getPlayerChoice(e) {
+//  console.log(this.id);
+//  e.stopPropagation();
+//  playerChoice = this.id;
+//  return playerSelection;}
+
+//choices.forEach(choice => choice.addEventListener('click', getPlayerChoice, {
+//  capture: true
+//}));
 
 
 function getComputerChoice(){
@@ -15,9 +52,7 @@ function getComputerChoice(){
     return random, choice[random];
 }
 
-
-
-
+computerSelection = getComputerChoice();
 
 
 function playRound(playerSelection, computerSelection){

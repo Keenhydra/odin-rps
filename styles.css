@@ -2,6 +2,8 @@
 
 body {
     background-image: linear-gradient(to bottom right, #9105b0, #01066d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100vw 100vh;
     display: flex;
     flex-direction: column;
@@ -41,8 +43,6 @@ body {
 
 
 
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -58,6 +58,12 @@ img {
     width: auto;
  }
 
+button {
+    background: none;
+    border: 0px;
+}
+
+
 h1 {
     font-size: 62px;
     text-shadow: 2px 2px 8px #000;
@@ -68,8 +74,5 @@ h2 {
     text-shadow: 2px 2px 8px #000;
 }
 
-.img {
-    border: red solid 1px;
-}
 
 
