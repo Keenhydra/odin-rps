@@ -1,6 +1,5 @@
 //JavaScript
 
-//const choices = document.querySelectorAll('.choice');
 
 const rocks = document.getElementById("rock");
 rocks.addEventListener("click", myRock);
@@ -10,41 +9,28 @@ papers.addEventListener("click", myPaper);
 
 const scissors = document.getElementById("scissors");
 scissors.addEventListener("click", myScissor);
-//scissors.addEventListener('click', playSound)
+
+
+const container = document.querySelector('.container-images');
+container.addEventListener('click', playRound)
 
 function myScissor() {
-  choice = 'scissors';
-  console.log(choice);
-  return choice;
+    playerSelection = 'scissors';
+    console.log(playerSelection);
+    return playerSelection;
 }
 
 function myPaper() {
-    choice = 'paper';
-    console.log(choice)
-    return choice;
+    playerSelection = 'paper';
+    console.log(playerSelection)
+    return playerSelection;
 }
 
 function myRock() {
-    choice = 'rock';
-    console.log(choice)
-    return choice;
+    playerSelection = 'rock';
+    console.log(playerSelection)
+    return playerSelection;
 }
-
-function playSound(){
-    console.log('boom');
-}
-
-
-//function getPlayerChoice(e) {
-//  console.log(this.id);
-//  e.stopPropagation();
-//  playerChoice = this.id;
-//  return playerSelection;}
-
-//choices.forEach(choice => choice.addEventListener('click', getPlayerChoice, {
-//  capture: true
-//}));
-
 
 function getComputerChoice(){
     const choice =['rock', 'paper', 'scissors']
@@ -54,29 +40,28 @@ function getComputerChoice(){
 
 computerSelection = getComputerChoice();
 
-
-function playRound(playerSelection, computerSelection){
+function playRound(){
         //PlayerSelection Rock
     if (playerSelection === 'rock' && computerSelection === 'scissors'){
-        return 'You Win!'
+        return console.log('You Win!')
     }else if (playerSelection === 'rock' && computerSelection === 'paper'){
-        return 'You Lose!'
+        return console.log('You Lose!')
     }else if(playerSelection === 'rock' && computerSelection === 'rock'){
-        return 'You Tied!'
+        return console.log('You Tied!')
         //PlayerSelection Paper
     }else if (playerSelection === 'paper' && computerSelection === 'scissors'){
-        return 'You Lose!'
+        return console.log('You Lose!')
     }else if (playerSelection === 'paper' && computerSelection === 'paper'){
-        return 'You Tied!'
+        return console.log('You Tied!')
     }else if(playerSelection === 'paper' && computerSelection === 'rock'){
-        return 'You Win!'
+        return console.log('You Win!')
         //PlayerSelection Scissors
     }else if (playerSelection === 'scissors' && computerSelection === 'scissors'){
-        return 'You Tied!'
+        return console.log('You Tied!')
     }else if (playerSelection === 'scissors' && computerSelection === 'paper'){
-        return 'You Win!'
+        return console.log('You Win!')
     }else if(playerSelection === 'scissors' && computerSelection === 'rock'){
-        return 'You Lose!'
+        return console.log('You Lose!')
     }else{
         return "Invalid input! Can't compare " + (playerSelection) + ' to ' + (computerSelection)
     }
