@@ -9,16 +9,30 @@
     <script src="java.js" defer></script>
 </head>
 <body>
-    <div class="title"><h1>Rock, Paper or Scissors?</h1></div>
+    <div class="title">
+        <h1>Rock, Paper or Scissors?</h1>
+        <h3>First to 5 wins!</h5>
+    </div>
     
     <div class="display">
-        <div class="display-title"><h2>Outcome:</h3></div>
+        <div class="display-title"><h3>Outcome:</h3>
+            <h2><span id="computer-selection">Computer picked</span></h2>
+        </div>
         <div class="display-result">
-            <div class="result player"></div>
-            <div class="result"></div>
-            <div class="result computer"></div>
+            <div class="result player">
+                <p class="score-text">Player:</p>
+                <p id="score-player"></p>
+            </div>
+            <div class="result">
+                <p id="result">Result<br>Here</p>
+            </div>
+            <div class="result computer">
+                <p class="score-text">Computer:</p>
+                <p id="score-computer"></p>
+            </div>
         </div>
     </div>
+    
     
     <div class="container">
         <div class="container-title"><h2>Pick your choice!</h3></div>

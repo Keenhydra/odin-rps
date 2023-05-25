@@ -22,10 +22,11 @@ body {
     box-shadow: 10px 20px 18px #0000007d;
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 
 .display-title {
-    flex: 0.5;
+    flex: 0.4;
 }
 
 .display-result {
@@ -33,6 +34,10 @@ body {
     display: flex;
     flex-direction: row;
     padding: 5px;
+}
+
+p {
+    font-size: 28px;
 }
 
 .result {
@@ -46,6 +51,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+
 }
 
 .container-images {
@@ -67,12 +74,33 @@ button {
 h1 {
     font-size: 62px;
     text-shadow: 2px 2px 8px #000;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-size: 32px;
     text-shadow: 2px 2px 8px #000;
+    margin: 5px;
+}
+
+h5 {
+    margin-bottom: 0px;
 }
 
 
-
+#reload {
+    justify-self: stretch;
+    background-color: #3d23ffb5;
+    border: none;
+    color: rgb(221, 239, 255);
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
